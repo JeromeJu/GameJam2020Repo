@@ -10,19 +10,19 @@ public class MainMenu : MonoBehaviour
     // scene2 is index 2
     // scene3 is index 3
     // GameComplete is index 4
-    
-    public SettingsMenu settingsMenu;
+
+    // public SettingsMenu settingsMenu;
 
     // start with tutorial
     public void PlayGame() {
         Debug.Log("Start");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level0Scene");
     }
 
     public void Settings() 
     {
         Debug.Log("Settings");
-        settingsMenu.settingsChosen = true;
+        // settingsMenu.settingsChosen = true;
     }
 
     public void About()
