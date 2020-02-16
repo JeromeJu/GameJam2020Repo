@@ -22,20 +22,31 @@ public class body : MonoBehaviour
             rigid.AddTorque(force, ForceMode2D.Force);
             rigid.AddForce(new Vector2(-force * 0.5f, 0f), ForceMode2D.Force);
         }
-        else if (Input.GetKey("n"))
+        if (Input.GetKey("n"))
         {
             // rigid.freezeRotation = false;
             rigid.AddTorque(-force, ForceMode2D.Force);
             rigid.AddForce(new Vector2(force * 0.5f, 0f), ForceMode2D.Force);
         }
-        else if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             // rigid.freezeRotation = false;
-            rigid.AddForce(new Vector2(0, force), ForceMode2D.Force);
+            rigid.AddForce(new Vector2(0, force * 0.1f), ForceMode2D.Impulse);
         }
-        else
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            // rigid.freezeRotation = true;
+            // rigid.freezeRotation = false;
+            rigid.AddForce(new Vector2(-force * 0.1f, 0), ForceMode2D.Impulse);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            // rigid.freezeRotation = false;
+            rigid.AddForce(new Vector2(force * 0.1f, 0), ForceMode2D.Impulse);
+        }
+        if (Input.GetKey(KeyCode.Keypad0))
+        {
+            Debug.Log("Pad0 Reload");
+            Manager.reload();
         }
     }
 }

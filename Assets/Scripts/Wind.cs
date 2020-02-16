@@ -7,12 +7,12 @@ public class Wind : MonoBehaviour
     public float xForce;
     public float yForce;
     private Rigidbody2D rigid;
-    private CapsuleCollider2D coll;
+    private PolygonCollider2D coll;
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        coll = GetComponent<CapsuleCollider2D>();
+        coll = GetComponent<PolygonCollider2D>();
         rigid.gravityScale = 0f;
     }
 
@@ -25,5 +25,6 @@ public class Wind : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         coll.enabled = false;
+        Destroy(this, 5f);
     }
 }
