@@ -59,7 +59,7 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PausedMenu1.cs" />
      <Compile Include="Assets\Scripts\PausedMenu2.cs" />
-     <Compile Include="Assets\Scripts\Settings.cs" />
+     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
      <Compile Include="Assets\Scripts\TryAgainMenu.cs" />
      <Compile Include="Assets\Scripts\Wind.cs" />
      <Compile Include="Assets\Scripts\body.cs" />

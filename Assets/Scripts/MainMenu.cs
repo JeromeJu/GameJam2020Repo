@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour
     // scene2 is index 2
     // scene3 is index 3
     // GameComplete is index 4
+    
+    public SettingsMenu settingsMenu;
 
     // start with tutorial
     public void PlayGame() {
@@ -20,7 +22,7 @@ public class MainMenu : MonoBehaviour
     public void Settings() 
     {
         Debug.Log("Settings");
-        // TODO
+        settingsMenu.settingsChosen = true;
     }
 
     public void About()
