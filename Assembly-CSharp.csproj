@@ -55,8 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Wind.cs" />
      <Compile Include="Assets\Scripts\body.cs" />
      <Compile Include="Assets\Scripts\camera.cs" />
+     <Compile Include="Assets\Scripts\fireControl.cs" />
+     <Compile Include="Assets\Scripts\followCamera.cs" />
+     <Compile Include="Assets\Scripts\holdingFire.cs" />
      <Compile Include="Assets\Scripts\leftLowerArm.cs" />
      <Compile Include="Assets\Scripts\leftLowerLeg.cs" />
      <Compile Include="Assets\Scripts\leftUpperArm.cs" />
