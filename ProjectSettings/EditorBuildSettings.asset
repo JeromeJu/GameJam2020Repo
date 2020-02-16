@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PutGameComplete.unity
     guid: 275b053638b784f58a6fca72f626ed7e
+  - enabled: 1
+    path: Assets/Scenes/Level4Scene.unity
+    guid: c74770cf1b2d8dd468d80145e7f5731e
+  - enabled: 1
+    path: Assets/Scenes/TryAgainMenu.unity
+    guid: fbf608dd9522f49baa276e6345f20565
   m_configObjects: {}
