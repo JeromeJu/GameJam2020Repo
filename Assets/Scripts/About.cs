@@ -6,17 +6,14 @@ using UnityEngine.SceneManagement;
 public class About : MonoBehaviour
 {
     // MainMenu is index 0
-    // Tutorial is index 1
-    // GamePlay is index 2
-    // TryAgainMenu is index 3
+    // scene1 is index 1
+    // scene2 is index 2
+    // scene3 is index 3
     // GameComplete is index 4
-    // Settings is index 5
-    // About is index 6
-    // PauseMenu is index 7
 
     // goes back to MainMenu
     public void Back() {
         Debug.Log("About");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
+        SceneManager.LoadScene("MainManu");
     }
 }

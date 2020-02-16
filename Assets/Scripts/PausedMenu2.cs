@@ -7,14 +7,10 @@ public class PausedMenu2 : MonoBehaviour
 {
 
     // MainMenu is index 0
-    // Tutorial is index 1
-    // Scene1 is index 2
-    // TryAgainMenu is index 3
+    // scene1 is index 1
+    // scene2 is index 2
+    // scene3 is index 3
     // GameComplete is index 4
-    // Settings is index 5
-    // About is index 6
-    // Scene2 is index 7    // current
-    // Scene3 is index 8
 
     [SerializeField] private GameObject pauseMenuUI2;
     
@@ -62,7 +58,7 @@ public class PausedMenu2 : MonoBehaviour
 
     public void MainMenu() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         isPaused2 = false;
     }
 

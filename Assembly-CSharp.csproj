@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\About.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PausedMenu1.cs" />
      <Compile Include="Assets\Scripts\PausedMenu2.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
