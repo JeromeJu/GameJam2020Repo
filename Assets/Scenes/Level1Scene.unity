@@ -404,6 +404,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4334219543722949876, guid: 2416215321627684c9877323ca9faf1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4560985548929115800, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -417,12 +422,12 @@ PrefabInstance:
     - target: {fileID: 6175600610168700162, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6175600610168700162, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.71
+      value: 5.14
       objectReference: {fileID: 0}
     - target: {fileID: 6175600610168700162, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
@@ -472,7 +477,7 @@ PrefabInstance:
     - target: {fileID: 6681740232276675314, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.17491351
+      value: 0.17491357
       objectReference: {fileID: 0}
     - target: {fileID: 6681740232276675314, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
@@ -502,12 +507,12 @@ PrefabInstance:
     - target: {fileID: 6681740233886096335, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.7332283
+      value: -0.73322856
       objectReference: {fileID: 0}
     - target: {fileID: 6681740233886096335, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.71634233
+      value: -0.71634245
       objectReference: {fileID: 0}
     - target: {fileID: 6681740233886096371, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
@@ -524,15 +529,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7879538237887400503, guid: 2416215321627684c9877323ca9faf1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8604896768708688469, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.7083118
+      value: -0.7083125
       objectReference: {fileID: 0}
     - target: {fileID: 8604896768708688469, guid: 2416215321627684c9877323ca9faf1b,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.6894689
+      value: -0.68946815
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 767518984682223384, guid: 2416215321627684c9877323ca9faf1b, type: 3}
@@ -2465,6 +2475,7 @@ GameObject:
   - component: {fileID: 1692874235}
   - component: {fileID: 1692874238}
   - component: {fileID: 1692874237}
+  - component: {fileID: 1692874239}
   m_Layer: 0
   m_Name: windHolder
   m_TagString: Wind
@@ -2530,8 +2541,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692874234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: 12.86, z: -2}
-  m_LocalScale: {x: 9.668388, y: 9.668388, z: 9.668388}
+  m_LocalPosition: {x: 26.43, y: 7.72, z: -2}
+  m_LocalScale: {x: 10.389882, y: 10.389882, z: 10.389882}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2571,5 +2582,19 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1692874239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692874234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275e2065f81778749abf0f14b1fe1daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xForce: -0.2
+  yForce: 0

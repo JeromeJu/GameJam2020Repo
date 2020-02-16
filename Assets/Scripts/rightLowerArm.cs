@@ -13,11 +13,11 @@ public class rightLowerArm : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         rigid.freezeRotation = true;
-        myColl = GetComponent<Collider2D>();
-        foreach (Collider2D coll in list)
-        {
-            Physics2D.IgnoreCollision(myColl, coll);
-        }
+        // myColl = GetComponent<Collider2D>();
+        // foreach (Collider2D coll in list)
+        // {
+        //     Physics2D.IgnoreCollision(myColl, coll);
+        // }
     }
 
     // Update is called once per frame

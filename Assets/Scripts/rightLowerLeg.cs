@@ -14,9 +14,9 @@ public class rightLowerLeg : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         rigid.freezeRotation = true;
-        coll = GetComponent<Collider2D>();
-        Physics2D.IgnoreCollision(coll, one);
-        Physics2D.IgnoreCollision(coll, two);
+        // coll = GetComponent<Collider2D>();
+        // Physics2D.IgnoreCollision(coll, one);
+        // Physics2D.IgnoreCollision(coll, two);
     }
 
     // Update is called once per frame

@@ -7,16 +7,16 @@ public class legControl : MonoBehaviour
     private Rigidbody2D rigid;
     public float force = 0;
     private Collider2D coll;
-    public Collider2D one;
-    public Collider2D two;
+    // public Collider2D one;
+    // public Collider2D two;
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         rigid.freezeRotation = true;
         coll = GetComponent<Collider2D>();
-        Physics2D.IgnoreCollision(coll, one);
-        Physics2D.IgnoreCollision(coll, two);
+        // Physics2D.IgnoreCollision(coll, one);
+        // Physics2D.IgnoreCollision(coll, two);
     }
 
     // Update is called once per frame

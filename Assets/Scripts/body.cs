@@ -10,22 +10,32 @@ public class body : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        // rigid.freezeRotation = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("n"))
-        {
-            rigid.AddForce(new Vector2(force, 0), ForceMode2D.Force);
-        }
         if (Input.GetKey("c"))
         {
-            rigid.AddForce(new Vector2(-force, 0), ForceMode2D.Force);
+            // rigid.freezeRotation = false;
+            rigid.AddTorque(force, ForceMode2D.Force);
+            rigid.AddForce(new Vector2(-force * 0.5f, 0f), ForceMode2D.Force);
         }
-        if (Input.GetKey(KeyCode.Space))
+        else if (Input.GetKey("n"))
         {
+            // rigid.freezeRotation = false;
+            rigid.AddTorque(-force, ForceMode2D.Force);
+            rigid.AddForce(new Vector2(force * 0.5f, 0f), ForceMode2D.Force);
+        }
+        else if (Input.GetKey(KeyCode.Space))
+        {
+            // rigid.freezeRotation = false;
             rigid.AddForce(new Vector2(0, force), ForceMode2D.Force);
+        }
+        else
+        {
+            // rigid.freezeRotation = true;
         }
     }
 }

@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\fireControl.cs" />
     <Compile Include="Assets\Scripts\followCamera.cs" />
     <Compile Include="Assets\Scripts\holdingFire.cs" />
+    <Compile Include="Assets\Scripts\ignoreColl.cs" />
     <Compile Include="Assets\Scripts\leftLowerArm.cs" />
     <Compile Include="Assets\Scripts\leftLowerLeg.cs" />
     <Compile Include="Assets\Scripts\leftUpperArm.cs" />
