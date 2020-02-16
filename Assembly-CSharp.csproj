@@ -55,6 +55,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\About.cs" />
+     <Compile Include="Assets\Scripts\PausedMenu1.cs" />
+     <Compile Include="Assets\Scripts\PausedMenu2.cs" />
+     <Compile Include="Assets\Scripts\Settings.cs" />
+     <Compile Include="Assets\Scripts\TryAgainMenu.cs" />
      <Compile Include="Assets\Scripts\Wind.cs" />
      <Compile Include="Assets\Scripts\body.cs" />
      <Compile Include="Assets\Scripts\camera.cs" />
