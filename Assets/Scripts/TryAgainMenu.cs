@@ -15,7 +15,7 @@ public class TryAgainMenu : MonoBehaviour
     // GameComplete is index 7
     
     // go to gameplay
-    public void TryAgain(float index) 
+    public void TryAgain(int index) 
     {
         Debug.Log("Try Again");
         SceneManager.LoadScene(index);
