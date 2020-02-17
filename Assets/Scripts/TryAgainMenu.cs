@@ -6,16 +6,19 @@ using UnityEngine.SceneManagement;
 public class TryAgainMenu : MonoBehaviour
 {
     // MainMenu is index 0
-    // scene1 is index 1
-    // scene2 is index 2
-    // scene3 is index 3
-    // GameComplete is index 4
+    // Level0Scene is index 1
+    // Level1Scene1 is index 2
+    // Level2Scene is index 3
+    // Level3Scene is index 4
+    // Level4Scene is index 5
+    // TryAgain is index 6
+    // GameComplete is index 7
     
     // go to gameplay
-    public void TryAgain() 
+    public void TryAgain(float index) 
     {
         Debug.Log("Try Again");
-        // TODO
+        SceneManager.LoadScene(index);
     }
 
     public void MainMenu() 
