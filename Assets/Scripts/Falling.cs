@@ -2,26 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class holdingFire : MonoBehaviour
+public class Falling : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Collision");
-        if (collision.gameObject.tag == "Wind")
+        if (collision.gameObject.name == "body")
         {
-            Debug.Log("Wind and Fire Collision");
             Manager.reload();
         }
     }

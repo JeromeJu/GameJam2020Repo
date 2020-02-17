@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Images/QuitButton.psd.meta
-guid: 560779fc54a754d3fa11651a66521fb7
-=======
-guid: de4e8b1f5fcc21b4788a1e45beb72e50
->>>>>>> 0e14c913f01d41ff8c3515763554e4c70055840f:Assets/Textures/lightning.png.meta
+guid: d19c02f4477dc48fc99f08bbd9652b4f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
