@@ -38,11 +38,10 @@ public class SettingsMenu : MonoBehaviour
     {
         
         settingsUI.SetActive(false);
+    }
+
+    public void Back() {
         Debug.Log("Back to Main Menu");
         SceneManager.LoadScene("MainManu");
     }
-
-    // public void Back() {
-        
-    // }
 }
