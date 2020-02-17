@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43c63931e95f4741acfb7cc23fca571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 200
+  strength: 50
 --- !u!61 &433505038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4494,7 +4494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d43c63931e95f4741acfb7cc23fca571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 200
+  strength: 50
 --- !u!61 &1345093583
 BoxCollider2D:
   m_ObjectHideFlags: 0
